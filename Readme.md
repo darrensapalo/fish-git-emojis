@@ -2,6 +2,12 @@
 
 Shortcuts to commit with Gitmoji messages. Default emojis are inspired from [gitmoji](https://gitmoji.carloscuesta.me/), and messages follow [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/) and [Angular commit messages guidelines]([https://link](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)).
 
+This is a fork of https://github.com/gazorby/fish-git-emojis, but the only difference is that the emojis are found after the commit classification, as shown below:
+
+```
+Fix: 🐛 Handled a null pointer exception
+```
+
 ## 🚀 Install
 
 Using [fisher](https://github.com/jorgebucaran/fisher) :
@@ -36,26 +42,26 @@ options :
 
 ### Examples
 
-- `gfeat "my new feat"` => `✨ feat: my new feat"`
+- `gfeat "my new feat"` => `feat: ✨ my new feat"`
 
-- `gdocs "readme" "add badges"` => `📝 doc(readme): "add badge"`
+- `gdocs "readme" "add badges"` => `doc(readme): 📝 "add badge"`
 
 - `gref "parser" "remove json parser" -k -b "Drop support for json parsing"` :
 
     ```console
-    ♻️ refactor(parser)!: remove json parser
+    refactor(parser)!: ♻️ remove json parser
 
     BREAKING CHANGE : Drop support for json parsing
     ```
 - `gperf "parser" "improve toml parsing" -f "toml parsing is 2x faster"` :
 
   ```console
-  ⚡️ perf(parser) improve toml parsing
+  perf(parser): ⚡️ improve toml parsing
 
   toml parsing is 2x faster
   ```
 
-- `gref "drop support for Node 6" -k` => `♻️ refactor!: drop support for Node 6`
+- `gref "drop support for Node 6" -k` => `refactor!: ♻️ drop support for Node 6`
 
 ## 📝 License
 
